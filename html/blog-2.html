@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Corp Vision</title>
+    <title>Blog Posts-Page 2</title>
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,8 +30,7 @@
     <!-- Other CSS -->
     <link rel="stylesheet" href="../css/flaticon/flaticon.css" />
     <!-- Style CSS -->
-    <link rel="stylesheet" href="../css/styled.css" />
-    <link rel="stylesheet" href="../css/stylek.css" />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <header class="header fixed-top">
@@ -40,27 +39,27 @@
           class="header-content d-flex justify-content-between align-items-center"
         >
           <div class="logo">
-            <a href="./index.html" class="text-decoration-none">
+            <a href="./home.html" class="text-decoration-none">
               <span>
                 <i class="fa-solid fa-align-right d-inline text-success"></i>
-                <span class="fs-4 label text-white">Corp Vision</span>
+                <span class="label text-white">Corp Vision</span>
                 <span class="brand text-white">Vision to your future</span>
               </span>
             </a>
           </div>
           <ul class="nav d-flex justify-content-between">
             <li class="nav-item">
-              <a class="nav-link active" href="./index.html">Home</a>
+              <a class="nav-link" href="./home.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./html/about.html">About</a>
+              <a class="nav-link" href="./about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./html/service.html">Services</a>
+              <a class="nav-link" href="./service.html">Services</a>
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle"
+                class="nav-link dropdown-toggle active"
                 data-bs-toggle="dropdown"
                 href="#"
                 role="button"
@@ -68,17 +67,23 @@
               >
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="./html/blog.html">Blog Posts</a>
+                  <a class="dropdown-item active" href="./blog.html"
+                    >Blog Posts</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="./html/404.html">404 Pages</a>
+                  <a class="dropdown-item" href="./404.html">404 Pages</a>
                 </li>
-                <li><a class="dropdown-item" href="#">Landing Page</a></li>
+                <li>
+                  <a class="dropdown-item" href="./landing.html"
+                    >Landing Page</a
+                  >
+                </li>
                 <li><a class="dropdown-item" href="#">Elements Page</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./html/contact.html">Contact</a>
+              <a class="nav-link" href="./contact.html">Contact</a>
             </li>
           </ul>
           <div
@@ -95,167 +100,96 @@
       </div>
     </header>
 
-    <section class="carousel"></section>
+    <section class="carousel">
+      <div
+        class="container d-flex flex-column justify-content-center align-content-center"
+      >
+        <div class="carousel-content">
+          <h1 class="text-center">Blog Posts</h1>
+          <p class="text-center">
+            Find all our latest news, insights, and events
+          </p>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </section>
 
-    <section class="about-us">
-      <div class="container">
-        <div class="row">
-          <div class="about-left col-md-6 col-sm-12">
-            <p class="text-color">ABOUT US</p>
-            <h1>We make the best strategies for you, Enhancing your success</h1>
-            <p class="mt-md-4 mt-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud ullamco laboris nisi ut ex ea.
-            </p>
-            <ul>
-              <li>
-                <a href="#">
-                  <span class="fa fa-check-circle"></span>
-                  UI/UX Design and Development
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="fa fa-check-circle"></span>
-                  Branding Design and Identity
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="fa fa-check-circle"></span>
-                  Mobile App Design and Development
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="about-right col-md-6 col-sm-12">
-            <div class="row position-relative">
-              <div class="about-image-left">
-                <img
-                  src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/a.jpg"
-                  alt=""
-                />
+    <section class="blog">
+      <div class="blog-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-4 item">
+              <div class="card">
+                <div class="card-header">
+                  <a href="#">
+                    <img src="/img/carousel/b4.jpg" class="d-block"/>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="title">Startup Business</a>
+                  <a href="#" class="label text-dark">Hello World!</a>
+                </div>
+                <div class="card-footer">
+                  <div class="author align-items-center">
+                    <a href="#">
+                      <img
+                        src="https://secure.gravatar.com/avatar/328cc1f23e4a3b73aa60ee6ced1897a1?s=40&d=mm&r=g"
+                      />
+                    </a>
+                    <div class="by-who">
+                      <span>by</span>
+                      <a href="#" class="text-black">W3Layouts</a>
+                    </div>
+                    <div class="date">
+                      <p>
+                        April 1, 2021</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="about-image-right ">
-                <img
-                  src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/c1.jpg"
-                  alt=""
-                  class="img-top"
-                />
-                <img
-                  src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/c4.jpg"
-                  alt=""
-                  class="img-bottom"
-                />
+            </div>
+            <div class="col-4 item">
+              <div class="card">
+                <div class="card-header">
+                  <a href="#">
+                    <img src="/img/news/bg1-scaled.jpg" />
+                  </a>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="title">Startup Business</a>
+                  <a href="#" class="label text-dark">Companies in NY launched a joint <br/> project on a three-tower hall</a>
+                </div>
+                <div class="card-footer">
+                  <div class="author align-items-center">
+                    <a href="#">
+                      <img
+                        src="https://secure.gravatar.com/avatar/328cc1f23e4a3b73aa60ee6ced1897a1?s=40&d=mm&r=g"
+                      />
+                    </a>
+                    <div class="by-who">
+                      <span>by</span>
+                      <a href="#" class="text-black">W3Layouts</a>
+                    </div>
+                    <div class="date">
+                      <p>
+                        April 1, 2021</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="challenge">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-12  challenge-left">
-            <p class="title">EVERY DAY BRINGS NEW CHALLENGES</p>
-            <h1 class="title-big">Creative agency focused on vision, product and people</h1>
-            <p>
-              Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies
-              nisi ac sed, lacinia est. Quisque ut lectus consequat, venenatis
-              eros et, sed commodo risus. Nullam sit amet laoreet elit.
-              Suspendisse non init magnaa velit efficitur, dolor eget ex
-              fermentum.
-            </p>
-            <a href="#" class="btn btn-style btn-primary mt-lg-5 mt-4">Discover More</a>
-          </div>
-          <div class="col-lg-6 col-md-12  challenge-right">
-            <div class="grid-template">
-              <div class="icon">
-                <img
-                  src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/icon1.png"
-                  alt=""
-                />
-              </div>
-              <h4>
-                <a href="#">Our Process</a>
-              </h4>
-            </div>
-            <div class="grid-template">
-              <div class="icon">
-                <img
-                  src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/icon1.png"
-                  alt=""
-                />
-              </div>
-              <h4>
-                <a href="#">Our Process</a>
-              </h4>
-            </div>
-            <div class="grid-template">
-              <div class="icon">
-                <img
-                  src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/icon1.png"
-                  alt=""
-                />
-              </div>
-              <h4>
-                <a href="#">Our Process</a>
-              </h4>
-            </div>
-            <div class="grid-template">
-              <div class="icon">
-                <img
-                  src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/icon1.png"
-                  alt=""
-                />
-              </div>
-              <h4>
-                <a href="#">Our Process</a>
-              </h4>
-            </div>
+        <div class="page-section pt-5 text-center">
+          <div class="page-numbers">
+            <a href="/html/blog.html" class="prev-page non-active pages">Prev</a>
+            <a href="/html/blog.html" class="non-active pages">1</a>
+            <span class="active pages">2</span>           
           </div>
         </div>
       </div>
     </section>
-
-    <section class="service">
-      <div class="container">
-        <h3 class="title-big text-center">Always there for your care, our Services</h3>
-        <div class="row text-center justify-content-center">
-          <div class="service-item col-lg-4 col-md-6 col-sm-12">
-            <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/s1.jpg" alt="">
-            <a href="#" class="xanh">Work Expertise</a>
-            <p>Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit..</p>
-            <div class="btn btn-service">Learn More</div>
-          </div> 
-          <div class="service-item col-lg-4 col-md-6 col-sm-12">
-            <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/s2.jpg" alt="">
-            <a href="#" class="xanh">Product Development</a>
-            <p>Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit..</p>
-            <div class="btn btn-service">Learn More</div>
-          </div> 
-          <div class="service-item col-lg-4 col-md-6 col-sm-12">
-            <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/s3.jpg" alt="">
-            <a href="#" class="xanh">Software Development</a>
-            <p>Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit..</p>
-            <div class="btn btn-service">Learn More</div>
-          </div> 
-        </div>
-      </div>
-    </section>
-
-    <section class="gallery"></section>
-
-    <section class="success"></section>
-
-    <section class="feedback"></section>
-
-    <section class="blog"></section>
-
-    <!-- FOOTER -->
-    <!-- <footer class="footer fixed-bottom">
+    <footer class="footer">
       <div class="footer-content">
         <div class="container">
           <div class="contact row">
@@ -349,8 +283,7 @@
           </p>
         </div>
       </div>
-    </footer> -->
-    <!-- Script -->
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -368,5 +301,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script type="text/javascript">
+      window.addEventListener("scroll",function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("nav-fixed",window.scrollY > 0);
+      })
+    </script>
   </body>
 </html>
