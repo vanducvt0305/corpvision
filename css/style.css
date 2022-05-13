@@ -119,7 +119,7 @@
 /* ABOUT-US  */
 .about-us{
     margin-top: 200px;
-    margin-bottom: 150px;
+    margin-bottom: 80px;
 }
 
 .about-left p .text-color{
@@ -173,7 +173,7 @@
 /* Challenge  */
 .challenge{
     background-color: #F7F7F7;
-    padding: 7rem 0;
+    padding: 5rem 0;
 }
 .challenge .challenge-left .title{
     font-size: 14px;
