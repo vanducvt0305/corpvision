@@ -314,7 +314,6 @@ a{
 }
 /* SUBSCRIBE */
 .subscribe{
-    margin-top: 150px;
     background-color: #151421;
     text-align: center;
     color: #ffffff;
@@ -1094,6 +1093,59 @@ a{
     opacity: .8;
     font-size: 17px;
     line-height: 27px;
+}
+/* CONTACT MAIN */
+.contact-main{
+    padding: 80px 0;
+    background-color: #f7f7f7;
+}
+.contact-main .item{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    color: #3f3a64 !important;
+    box-shadow: rgb(1 1 1 / 5%) 1px 1px 5px 0px;
+}
+.contact-main .item .contact-info h3{
+    font-weight: 600;
+    font-size: 22px;
+}
+.contact-main .item .contact-info p,
+.contact-main .item .contact-info a{
+    color: #666;
+    opacity: .8;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.contact-main .item .icon{
+    font-size: 40px;
+    width: 40px;
+}
+.contact-main .item-1 .fa{
+    font-weight: 400;
+}
+.contact-main .title p{
+    font-size: 17px;
+    font-weight: 400;
+}
+.contact-main-form input.form-control{
+    font-size: 18px;
+    padding: 0 25px;
+    height: 60px;
+}
+.contact-main-form textarea.form-control{
+    font-size: 18px;
+    padding: 0 25px;
+    height: 130px;
+    line-height: 50px;
+}
+.contact-main-form .form-control:focus{
+    box-shadow: none;
+    border-color: #000;
+    background-color: transparent;
 }
 /* FOOTER */
 .footer{
