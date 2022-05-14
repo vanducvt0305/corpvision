@@ -149,17 +149,23 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script>
-      $(".slider-banner").slick({
-        arrows: true,
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        fade: true,
-        cssEase: "linear",
-        prevArrow:
-          "<button class='slick-prev slick-arrow' aria-label='Previous' type='button' style=''><i class='fa fa-arrow-left'></i></button>",
-        nextArrow:
-          "<button class='slick-next slick-arrow' aria-label='Next' type='button' style=''><i class='fa fa-arrow-right'></i></button>",
+      $(document).ready(function () {
+        setTimeout(function () {
+          $(".slider-banner").slick({
+            arrows: true,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 4500,
+            fade: true,
+            pauseOnFocus: false,
+            pauseOnHover: false,
+            cssEase: "linear",
+            prevArrow:
+              "<button class='slick-prev slick-arrow' aria-label='Previous' type='button' style=''><i class='fa fa-arrow-left'></i></button>",
+            nextArrow:
+              "<button class='slick-next slick-arrow' aria-label='Next' type='button' style=''><i class='fa fa-arrow-right'></i></button>",
+          });
+        }, 2000);
       });
     </script>
   </body>
