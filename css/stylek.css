@@ -31,6 +31,13 @@ a {
   color: #3f3a64;
   line-height: 45px;
 }
+.container{
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* HEADER */
 .header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -599,7 +606,7 @@ a {
   font-weight: 400;
 }
 .about-company .features {
-  margin-top: 80px;
+  margin-top: 50px;
 }
 .about-company .features .item {
   display: grid;
@@ -850,7 +857,7 @@ a {
 }
 .testimonial .comment {
   margin-top: 45px;
-  padding: 0 80px;
+  /* padding: 0 80px; */
 }
 .testimonial .comment-area {
   padding: 40px 30px;
@@ -991,6 +998,9 @@ a {
   background-attachment: fixed;
   z-index: 1;
   position: relative;
+}
+.generation .title{
+  max-width: 700px;
 }
 .generation::before {
   content: "";
@@ -1225,6 +1235,10 @@ a {
 }
 @media screen and (max-width: 992px) {
   /* HEARDER */
+  .title h3{
+    font-size: 32px !important;
+    line-height: 40px;
+  }
   .header {
     height: auto;
     padding: 20px 0;
@@ -1290,6 +1304,14 @@ a {
   }
   .solution .main .item{
     padding: 1.5rem;
+  }
+  /* LANDING */
+  .challenge .challenge-right .box{
+    padding: 1.5rem;
+  }
+  .generation h2{
+    font-size: 32px;
+    line-height: 40px;
   }
 }
 @media screen and (max-width: 768px) {
