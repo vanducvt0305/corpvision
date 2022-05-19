@@ -33,69 +33,83 @@
     <link rel="stylesheet" href="/css/stylek.css" />
   </head>
   <body>
-    <header class="header fixed-top">
+    <header class="header fixed-top" id="siteHeader">
       <div class="container">
-        <div
-          class="header-content d-flex justify-content-between align-items-center"
-        >
-          <div class="logo">
-            <a href="/index.html" class="text-decoration-none">
-              <span>
-                <i class="fa-solid fa-align-right d-inline text-success"></i>
-                <span class="label text-white">Corp Vision</span>
-                <span class="brand text-white">Vision to your future</span>
-              </span>
-            </a>
-          </div>
-          <ul class="nav d-flex justify-content-between">
-            <li class="nav-item">
-              <a class="nav-link" href="/index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/html/about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/html/service.html">Services</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle active"
-                data-bs-toggle="dropdown"
-                href="#"
-                role="button"
-                >Pages</a
-              >
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item active" href="/html/blog.html"
-                    >Blog Posts</a
+        <div class="header-content">
+          <nav class="navbar navbar-expand-lg">
+            <div class="logo">
+              <a href="/index.html" class="text-decoration-none">
+                <span>
+                  <i class="fa-solid fa-align-right d-inline text-success"></i>
+                  <span class="label text-white">Corp Vision</span>
+                  <span class="brand text-white">Vision to your future</span>
+                </span>
+              </a>
+            </div>
+            <button
+              class="navbar-toggler bg-success"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarTogglerCorp"
+              onclick="activeHeader()"
+            >
+              <span class="navbar-toggler-icon fa fa-bars icon-expand" id="icon-expand" style="display: block;"></span>
+              <span class="navbar-toggler-icon fa fa-times icon-close" id="icon-close" style="display: none;"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerCorp">
+              <ul class="nav navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/html/about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/html/service.html">Services</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle active"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                    role="button"
+                    >Pages</a
                   >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item active" href="/html/blog.html"
+                        >Blog Posts</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">404 Pages</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/html/landing.html"
+                        >Landing Page</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Elements Page</a>
+                    </li>
+                  </ul>
                 </li>
-                <li>
-                  <a class="dropdown-item" href="#">404 Pages</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="/html/contact.html">Contact</a>
                 </li>
-                <li>
-                  <a class="dropdown-item" href="/html/landing.html"
-                    >Landing Page</a
-                  >
-                </li>
-                <li><a class="dropdown-item" href="#">Elements Page</a></li>
               </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/html/contact.html">Contact</a>
-            </li>
-          </ul>
-          <div
-            class="mode d-flex justify-content-between align-items-center text-white"
-          >
-            <div class="search me-2 bg-success rounded-circle">
-              <i class="fa fa-search"></i>
             </div>
-            <div class="light-dark">
-              <i class="fa-regular fa-moon"></i>
+            <div
+              class="mode d-flex justify-content-between align-items-center text-white"
+            >
+              <div class="search me-2 bg-success rounded-circle">
+                <i class="fa fa-search"></i>
+              </div>
+              <div class="light-dark">
+                <i class="fa-regular fa-moon"></i>
+              </div>
             </div>
-          </div>
+          </nav>
         </div>
       </div>
     </header>
@@ -427,5 +441,36 @@
         header.classList.toggle("nav-fixed",window.scrollY > 0);
       })
     </script>
+        <script>
+          function activeHeader() {
+            var site_header = document.getElementById("siteHeader");
+            var max_width = window.matchMedia("(max-width: 992px)")
+            if(max_width.matches){
+              if(!site_header.classList.contains("nav-fixed")){
+              site_header.classList.toggle("header-active");
+            }
+            }
+          }
+        </script>
+        <script>
+          $(function () {
+            $(".navbar-toggler").click(function () {
+              $("body").toggleClass("noscroll");
+            });
+          });
+        </script>
+        <script>
+          var icon_expand = document.getElementById("icon-expand");
+          var icon_close = document.getElementById("icon-close")
+          $(".navbar-toggler").click(function (){
+            if(icon_expand.style.display==="block"){
+              icon_expand.style.display = "none"
+              icon_close.style.display = "block"
+            }else{
+              icon_expand.style.display = "block"
+              icon_close.style.display = "none"
+            }
+          })
+        </script>
   </body>
 </html>
