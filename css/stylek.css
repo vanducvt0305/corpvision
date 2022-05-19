@@ -56,9 +56,6 @@ a {
   justify-content: center;
   align-items: center;
 }
-.header .nav-item {
-  margin-left: -10px;
-}
 .header .nav-link {
   color: #ffffff;
   font-weight: 600;
@@ -1264,6 +1261,9 @@ a {
   .header .dropdown-item{
       text-align: center;
   }
+  /* .dropdown-menu{
+    border: none;
+  } */
   .noscroll{
       height: 100%;
       overflow: hidden;
