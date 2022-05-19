@@ -857,7 +857,7 @@ a {
 }
 .testimonial .comment {
   margin-top: 45px;
-  /* padding: 0 80px; */
+  padding: 0 80px;
 }
 .testimonial .comment-area {
   padding: 40px 30px;
@@ -1317,6 +1317,9 @@ a {
 @media screen and (max-width: 768px) {
   .serve-body .item{
     padding: 40px 30px;
+  }
+  .testimonial .slick-dots{
+    transform: translateX(-12%);
   }
 }
 @media screen and (max-width: 576px) {
