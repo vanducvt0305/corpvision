@@ -34,6 +34,27 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.slider .bg-1 h1, .slider .bg-1 a{
+    animation-delay: 1s;
+}
+.slider .bg-2 h1, .slider .bg-2 a{
+    animation-delay: 4s;
+}
+.slider .bg-2 p{
+    animation-delay: 3.5s;
+}
+.slider .bg-3 h1, .slider .bg-3 a{
+    animation-delay: 7s;
+}
+.slider .bg-3 p{
+    animation-delay: 6.5s;
+}
+.slider .bg-4 h1, .slider .bg-4 a{
+    animation-delay: 10s;
+}
+.slider .bg-4 p{
+    animation-delay: 9.5s;
+}
 .slider .slider-item{
     z-index: 1;
 }
