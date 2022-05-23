@@ -733,6 +733,9 @@ a {
 .gallery .brand img {
   padding: 0 18px;
 }
+.lg-backdrop{
+  opacity: .7 !important;
+}
 /* SUCCESS */
 .success {
   margin: 100px 0;

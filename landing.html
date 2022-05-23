@@ -30,6 +30,14 @@
     <!-- Slick CSS -->
     <link rel="stylesheet" type="text/css" href="/css/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="/css/slick/slick-theme.css" />
+    <!-- LightGallery CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0-beta.5/css/lightgallery-bundle.min.css"
+      integrity="sha512-lgRFGedXdci5Ykc5Wbgd8QCzt3lBmnkWcMRAS8myln2eMCDwQBrHmjqvUj9rBcKOyWMC+EYJnvEppggw1v+m8Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Other CSS -->
     <link rel="stylesheet" href="/css/flaticon/flaticon.css" />
     <!-- Style CSS -->
@@ -88,9 +96,7 @@
                   >
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="/blog.html"
-                        >Blog Posts</a
-                      >
+                      <a class="dropdown-item" href="/blog.html">Blog Posts</a>
                     </li>
                     <li>
                       <a class="dropdown-item" href="#">404 Pages</a>
@@ -406,8 +412,8 @@
           </div>
           <div class="main">
             <div class="row">
-              <div class="col-lg-4 col-md-6">
-                <a href="#" class="zoom d-block">
+              <div class="col-lg-4 col-md-6 item-1">
+                <a href="/img/gallery/c1.jpg" class="zoom d-block">
                   <img src="/img/gallery/c1.jpg" class="img-fluid d-block" />
                   <div class="overlay"></div>
                   <div class="overlay-info">
@@ -418,8 +424,8 @@
                   </div>
                 </a>
               </div>
-              <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
-                <a href="#" class="zoom d-block">
+              <div class="col-lg-4 col-md-6 mt-md-0 mt-4 item-2">
+                <a href="/img/gallery/c2.jpg" class="zoom d-block">
                   <img src="/img/gallery/c2.jpg" class="img-fluid d-block" />
                   <div class="overlay"></div>
                   <div class="overlay-info">
@@ -430,8 +436,8 @@
                   </div>
                 </a>
               </div>
-              <div class="col-lg-4 col-md-6 mt-lg-0 mt-4">
-                <a href="#" class="zoom d-block">
+              <div class="col-lg-4 col-md-6 mt-lg-0 mt-4 item-3">
+                <a href="/img/gallery/c3.jpg" class="zoom d-block">
                   <img src="/img/gallery/c3.jpg" class="img-fluid d-block" />
                   <div class="overlay"></div>
                   <div class="overlay-info">
@@ -442,8 +448,8 @@
                   </div>
                 </a>
               </div>
-              <div class="col-lg-4 col-md-6 mt-4">
-                <a href="#" class="zoom d-block">
+              <div class="col-lg-4 col-md-6 mt-4 item-4">
+                <a href="/img/gallery/c4.jpg" class="zoom d-block">
                   <img src="/img/gallery/c4.jpg" class="img-fluid d-block" />
                   <div class="overlay"></div>
                   <div class="overlay-info">
@@ -454,8 +460,8 @@
                   </div>
                 </a>
               </div>
-              <div class="col-lg-4 col-md-6 mt-4">
-                <a href="#" class="zoom d-block">
+              <div class="col-lg-4 col-md-6 mt-4 item-5">
+                <a href="/img/gallery/c5.jpg" class="zoom d-block">
                   <img src="/img/gallery/c5.jpg" class="img-fluid d-block" />
                   <div class="overlay"></div>
                   <div class="overlay-info">
@@ -466,8 +472,8 @@
                   </div>
                 </a>
               </div>
-              <div class="col-lg-4 col-md-6 mt-4">
-                <a href="#" class="zoom d-block">
+              <div class="col-lg-4 col-md-6 mt-4 item-6">
+                <a href="/img/gallery/c6.jpg" class="zoom d-block">
                   <img src="/img/gallery/c6.jpg" class="img-fluid d-block" />
                   <div class="overlay"></div>
                   <div class="overlay-info">
@@ -1143,15 +1149,9 @@
             >
               <h3>Categories</h3>
               <div class="categories-item connect d-flex flex-column">
-                <a href="#"
-                  >Marketing Strategy</a
-                >
-                <a href="#"
-                  >Startup Business</a
-                >
-                <a href="#"
-                  >Web Development</a
-                >
+                <a href="#">Marketing Strategy</a>
+                <a href="#">Startup Business</a>
+                <a href="#">Web Development</a>
               </div>
             </div>
             <div
@@ -1198,6 +1198,12 @@
     <script
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0-beta.5/lightgallery.min.js"
+      integrity="sha512-+cRLP8t0rsqPalRf//6kfVwRVPzxvwtgLOm8XoSw+M/ND6/0aODP3WFs8m4EPtqsJ9aurqbYq4q/0u8lRJSldA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     ></script>
     <script type="text/javascript">
       window.addEventListener("scroll", function () {
@@ -1246,6 +1252,36 @@
           icon_close.style.display = "none";
         }
       });
+    </script>
+    <script>
+      lightGallery(document.querySelector(".gallery .main .item-1"),{
+        download: false
+      })
+    </script>
+    <script>
+      lightGallery(document.querySelector(".gallery .main .item-2"),{
+        download:false
+      })
+    </script>
+    <script>
+      lightGallery(document.querySelector(".gallery .main .item-3"),{
+        download:false
+      })
+    </script>
+    <script>
+      lightGallery(document.querySelector(".gallery .main .item-4"),{
+        download:false
+      })
+    </script>
+    <script>
+      lightGallery(document.querySelector(".gallery .main .item-5"),{
+        download:false
+      })
+    </script>
+    <script>
+      lightGallery(document.querySelector(".gallery .main .item-6"),{
+        download:false
+      })
     </script>
   </body>
 </html>
