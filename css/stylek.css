@@ -992,12 +992,14 @@ a {
 }
 .testimonial .comment {
   margin-top: 45px;
-  padding: 0 80px;
+  /* padding: 0 80px; */
+  
 }
 .testimonial .comment-area {
   padding: 40px 30px;
   margin: auto;
   position: relative;
+  overflow: hidden;
 }
 .testimonial .comment-area .comment-section p {
   font-size: 18px;
@@ -1031,9 +1033,6 @@ a {
 .testimonial .author .name-job p {
   font-size: 17px;
   color: #666;
-}
-.testimonial .slick-dots {
-  transform: translateX(-6%);
 }
 .testimonial .slick-dots li button::before {
   font-size: 12.5px;
@@ -1444,6 +1443,10 @@ a {
   .header.header-active {
     background-color: rgba(0, 0, 0, 0.7);
   }
+  /* SLIDER */
+  .slider .slider-item h1{
+    font-size: 50px;
+  }
   /* SERVICE */
   .serve-body .item{
     grid-gap: 15px;
@@ -1468,12 +1471,19 @@ a {
   }
 }
 @media screen and (max-width: 768px) {
+  .slider .slider-item h1{
+    font-size: 45px;
+  }
+  .slider .slider-item p{
+    font-size: 18px;
+    line-height: 28px;
+  }  
   .serve-body .item{
     padding: 40px 30px;
   }
-  .testimonial .slick-dots{
-    transform: translateX(-12%);
-  }
 }
 @media screen and (max-width: 576px) {
+  .slider .slider-item h1{
+    font-size: 40px;
+  }
 }
