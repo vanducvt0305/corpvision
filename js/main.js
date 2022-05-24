@@ -3,6 +3,12 @@ function animateToggle(){
     var bg_2 = document.getElementById("bg-2").classList;
     var bg_3 = document.getElementById("bg-3").classList;
     var bg_4 = document.getElementById("bg-4").classList;
+
+    // bắtt theo thằng này thử slider-background 
+    // cú pháp hnhu là document.getElementByClassName
+    var bg = document.getElementsByClassName("slider-background")
+    // xong check điều kiện cho nó if cái class nó có opacity 1 thì add cho nó class animation còn không remove
+    
     
     var h1_b1 = document.querySelector(".bg-1 div h1");
     var p_b1 = document.querySelector(".bg-1 div p");
@@ -20,7 +26,9 @@ function animateToggle(){
     var p_b4 = document.querySelector(".bg-4 div p");
     var a_b4 = document.querySelector(".bg-4 div a");
 
-
+    if(bg.style.opacity === 1){
+        h1_b1.classList.add("animate__flipInX")
+    }
 
     // --------------------------------
     h1_b1.classList.toggle("animate__flipInX" , bg_1.contains("slick-active"))

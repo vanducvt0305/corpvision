@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Corp Vision</title>
+    <title>Landing Page-Corp Vision</title>
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,16 +30,11 @@
     <!-- Slick CSS -->
     <link rel="stylesheet" type="text/css" href="/css/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="/css/slick/slick-theme.css" />
-    <!-- LightGallery CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0-beta.5/css/lightgallery-bundle.min.css"
-      integrity="sha512-lgRFGedXdci5Ykc5Wbgd8QCzt3lBmnkWcMRAS8myln2eMCDwQBrHmjqvUj9rBcKOyWMC+EYJnvEppggw1v+m8Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <!-- Light Box -->
+    <link rel="stylesheet" href="css/dist/css/lightbox.css" />
     <!-- Other CSS -->
     <link rel="stylesheet" href="/css/flaticon/flaticon.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Style CSS -->
     <link rel="stylesheet" href="/css/stylek.css" />
   </head>
@@ -131,17 +126,141 @@
       </div>
     </header>
 
-    <section class="carousel">
-      <div
-        class="container d-flex flex-column justify-content-center align-content-center"
-      >
-        <div class="carousel-content">
-          <h1 class="text-center">Landing</h1>
-          <p class="text-center">We work with bold brands that we believe in</p>
+    <div class="slider">
+      <div class="slider-banner">
+        <div class="slider-background bg-1 d-flex align-items-center" id="bg-1">
+          <div class="container">
+            <div class="slider-item item-1">
+              <h1
+                data-aos="flip-down"
+                data-aos-duration="1000"
+                data-aos-delay="800"
+              >
+                We will solve your issues our vision to your future
+              </h1>
+              <!-- animate__flipInX -->
+              <p data-aos="fade-down" data-aos-duration="1500">
+                Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
+              </p>
+              <!-- animate__fadeInDown -->
+              <a
+                href="#"
+                class="btn btn-success btn-style"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="800"
+                >Learn More</a
+              >
+              <!-- animate__fadeInUp -->
+            </div>
+          </div>
+          <div class="overlay"></div>
+        </div>
+        <div class="slider-background bg-2 d-flex align-items-center" id="bg-2">
+          <div class="container">
+            <div class="slider-item item-2">
+              <h1
+                data-aos="fade-down"
+                data-aos-duration="1000"
+                data-aos-delay="800"
+              >
+                Embracing success do our best, need best advice
+              </h1>
+              <!-- animate__fadeInDown -->
+              <p data-aos="fade-down" data-aos-duration="1500">
+                Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
+              </p>
+              <!-- animate__fadeInDown -->
+              <a
+                href="#"
+                class="btn btn-success btn-style"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+                data-aos-delay="800"
+                >Learn More</a
+              >
+              <!-- animate__fadeInDown -->
+            </div>
+          </div>
+          <div class="overlay"></div>
+        </div>
+        <div class="slider-background bg-3 d-flex align-items-center" id="bg-3">
+          <div class="container">
+            <div class="slider-item item-3">
+              <h1
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="800"
+              >
+                Digital transformation driven by technology
+              </h1>
+              <!-- animate__fadeInUp -->
+              <p data-aos="fade-up" data-aos-duration="1500">
+                Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
+              </p>
+              <!-- animate__fadeInUp -->
+              <a
+                href="#"
+                class="btn btn-success btn-style"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+                data-aos-delay="800"
+              >
+                Learn More
+              </a>
+              <!-- animate__fadeInDown -->
+            </div>
+          </div>
+          <div class="overlay"></div>
+        </div>
+        <div class="slider-background bg-4 d-flex align-items-center" id="bg-4">
+          <div class="container">
+            <div class="slider-item item-4">
+              <h1
+                data-aos="flip-down"
+                data-aos-duration="1000"
+                data-aos-delay="800"
+              >
+                For those who believe in leaving a mark
+              </h1>
+              <!-- animate__flipInX -->
+              <p data-aos="fade-down" data-aos-duration="1500">
+                Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
+              </p>
+              <!-- animate__fadeInDown -->
+              <a
+                href="#"
+                class="btn btn-success btn-style"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="800"
+              >
+                Learn More
+              </a>
+              <!-- animate__fadeInUp -->
+            </div>
+          </div>
+          <div class="overlay"></div>
         </div>
       </div>
-      <div class="overlay"></div>
-    </section>
+      <div class="shape">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
+          <path fill-opacity="1">
+            <animate
+              attributeName="d"
+              dur="20000ms"
+              repeatCount="indefinite"
+              values="M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,160L48,181.3C96,203,192,245,288,234.7C384,224,480,160,576,133.3C672,107,768,117,864,138.7C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;												 M0,64L48,74.7C96,85,192,107,288,133.3C384,160,480,192,576,170.7C672,149,768,75,864,80C960,85,1056,171,1152,181.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
+              M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;"
+            />
+          </path>
+        </svg>
+      </div>
+    </div>
 
     <section class="about-company">
       <div class="container">
@@ -413,7 +532,12 @@
           <div class="main">
             <div class="row">
               <div class="col-lg-4 col-md-6 item-1">
-                <a href="/img/gallery/c1.jpg" class="zoom d-block">
+                <a
+                  href="/img/gallery/c1.jpg"
+                  class="zoom d-block"
+                  data-lightbox="galleryimg"
+                  data-title="Project 1"
+                >
                   <img src="/img/gallery/c1.jpg" class="img-fluid d-block" />
                   <div class="overlay"></div>
                   <div class="overlay-info">
@@ -425,7 +549,12 @@
                 </a>
               </div>
               <div class="col-lg-4 col-md-6 mt-md-0 mt-4 item-2">
-                <a href="/img/gallery/c2.jpg" class="zoom d-block">
+                <a
+                  href="/img/gallery/c2.jpg"
+                  class="zoom d-block"
+                  data-lightbox="galleryimg"
+                  data-title="Project 2"
+                >
                   <img src="/img/gallery/c2.jpg" class="img-fluid d-block" />
                   <div class="overlay"></div>
                   <div class="overlay-info">
@@ -437,7 +566,12 @@
                 </a>
               </div>
               <div class="col-lg-4 col-md-6 mt-lg-0 mt-4 item-3">
-                <a href="/img/gallery/c3.jpg" class="zoom d-block">
+                <a
+                  href="/img/gallery/c3.jpg"
+                  class="zoom d-block"
+                  data-lightbox="galleryimg"
+                  data-title="Project 3"
+                >
                   <img src="/img/gallery/c3.jpg" class="img-fluid d-block" />
                   <div class="overlay"></div>
                   <div class="overlay-info">
@@ -449,7 +583,12 @@
                 </a>
               </div>
               <div class="col-lg-4 col-md-6 mt-4 item-4">
-                <a href="/img/gallery/c4.jpg" class="zoom d-block">
+                <a
+                  href="/img/gallery/c4.jpg"
+                  class="zoom d-block"
+                  data-lightbox="galleryimg"
+                  data-title="Project 4"
+                >
                   <img src="/img/gallery/c4.jpg" class="img-fluid d-block" />
                   <div class="overlay"></div>
                   <div class="overlay-info">
@@ -461,7 +600,12 @@
                 </a>
               </div>
               <div class="col-lg-4 col-md-6 mt-4 item-5">
-                <a href="/img/gallery/c5.jpg" class="zoom d-block">
+                <a
+                  href="/img/gallery/c5.jpg"
+                  class="zoom d-block"
+                  data-lightbox="galleryimg"
+                  data-title="Project 5"
+                >
                   <img src="/img/gallery/c5.jpg" class="img-fluid d-block" />
                   <div class="overlay"></div>
                   <div class="overlay-info">
@@ -473,7 +617,12 @@
                 </a>
               </div>
               <div class="col-lg-4 col-md-6 mt-4 item-6">
-                <a href="/img/gallery/c6.jpg" class="zoom d-block">
+                <a
+                  href="/img/gallery/c6.jpg"
+                  class="zoom d-block"
+                  data-lightbox="galleryimg"
+                  data-title="Project 6"
+                >
                   <img src="/img/gallery/c6.jpg" class="img-fluid d-block" />
                   <div class="overlay"></div>
                   <div class="overlay-info">
@@ -1175,6 +1324,13 @@
             <a href="#" class="text-success text-decoration-none">W3Layouts.</a>
           </p>
         </div>
+        <button
+          onclick="topFunction()"
+          id="movetop"
+          title="Go to Top"
+        >
+          <span class="fa fa-angle-up"></span>
+        </button>
       </div>
     </footer>
     <!-- Script -->
@@ -1205,6 +1361,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="/js/dist/js/lightbox.min.js"></script>
     <script type="text/javascript">
       window.addEventListener("scroll", function () {
         var header = document.querySelector("header");
@@ -1220,6 +1377,26 @@
           arrows: false,
           dots: true,
         });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        setTimeout(function () {
+          $(".slider-banner").slick({
+            arrows: true,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            fade: true,
+            pauseOnFocus: false,
+            pauseOnHover: false,
+            cssEase: "linear",
+            prevArrow:
+              "<button class='slick-prev slick-arrow' aria-label='Previous' type='button' style=''><i class='fa fa-arrow-left'></i></button>",
+            nextArrow:
+              "<button class='slick-next slick-arrow' aria-label='Next' type='button' style=''><i class='fa fa-arrow-right'></i></button>",
+          });
+        }, 2000);
       });
     </script>
     <script>
@@ -1254,34 +1431,28 @@
       });
     </script>
     <script>
-      lightGallery(document.querySelector(".gallery .main .item-1"),{
-        download: false
-      })
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          document.getElementById("movetop").style.display = "block";
+        } else {
+          document.getElementById("movetop").style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
     </script>
     <script>
-      lightGallery(document.querySelector(".gallery .main .item-2"),{
-        download:false
-      })
-    </script>
-    <script>
-      lightGallery(document.querySelector(".gallery .main .item-3"),{
-        download:false
-      })
-    </script>
-    <script>
-      lightGallery(document.querySelector(".gallery .main .item-4"),{
-        download:false
-      })
-    </script>
-    <script>
-      lightGallery(document.querySelector(".gallery .main .item-5"),{
-        download:false
-      })
-    </script>
-    <script>
-      lightGallery(document.querySelector(".gallery .main .item-6"),{
-        download:false
-      })
+      AOS.init();
     </script>
   </body>
 </html>

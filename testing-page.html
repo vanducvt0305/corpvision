@@ -32,10 +32,12 @@
     <link rel="stylesheet" type="text/css" href="/css/slick/slick-theme.css" />
     <!-- Other CSS -->
     <link rel="stylesheet" href="/css/flaticon/flaticon.css" />
-    <link
+
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    /> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Style CSS -->
     <link rel="stylesheet" href="/css/stylek.css" />
     <link rel="stylesheet" href="/css/testing.css" />
@@ -46,20 +48,25 @@
         <div class="slider-background bg-1 d-flex align-items-center" id="bg-1">
           <div class="container">
             <div class="slider-item item-1">
-              <h1 class="animate__animated " >
-                <!--  -->
+              <h1
+                data-aos="flip-down"
+                data-aos-duration="1000"
+                data-aos-delay="800"
+              >
                 We will solve your issues our vision to your future
               </h1>
               <!-- animate__flipInX -->
-              <p class="animate__animated">
-                <!--  -->
+              <p data-aos="fade-down" data-aos-duration="1500">
                 Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
               </p>
               <!-- animate__fadeInDown -->
               <a
                 href="#"
-                class="btn btn-success btn-style animate__animated "
+                class="btn btn-success btn-style"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="800"
                 >Learn More</a
               >
               <!-- animate__fadeInUp -->
@@ -71,19 +78,24 @@
           <div class="container">
             <div class="slider-item item-2">
               <h1
-                class="animate__animated "
+                data-aos="fade-down"
+                data-aos-duration="1000"
+                data-aos-delay="800"
               >
                 Embracing success do our best, need best advice
               </h1>
               <!-- animate__fadeInDown -->
-              <p class="animate__animated ">
+              <p data-aos="fade-down" data-aos-duration="1500">
                 Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
               </p>
               <!-- animate__fadeInDown -->
               <a
                 href="#"
-                class="btn btn-success btn-style animate__animated "
+                class="btn btn-success btn-style"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+                data-aos-delay="800"
                 >Learn More</a
               >
               <!-- animate__fadeInDown -->
@@ -94,16 +106,26 @@
         <div class="slider-background bg-3 d-flex align-items-center" id="bg-3">
           <div class="container">
             <div class="slider-item item-3">
-              <h1 class="animate__animated ">
+              <h1
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="800"
+              >
                 Digital transformation driven by technology
               </h1>
               <!-- animate__fadeInUp -->
-              <p class="animate__animated ">
+              <p data-aos="fade-up" data-aos-duration="1500">
                 Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
               </p>
               <!-- animate__fadeInUp -->
-              <a href="#" class="btn btn-success btn-style animate__animated ">
+              <a
+                href="#"
+                class="btn btn-success btn-style"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+                data-aos-delay="800"
+              >
                 Learn More
               </a>
               <!-- animate__fadeInDown -->
@@ -114,16 +136,26 @@
         <div class="slider-background bg-4 d-flex align-items-center" id="bg-4">
           <div class="container">
             <div class="slider-item item-4">
-              <h1 class="animate__animated ">
+              <h1
+                data-aos="flip-down"
+                data-aos-duration="1000"
+                data-aos-delay="800"
+              >
                 For those who believe in leaving a mark
               </h1>
               <!-- animate__flipInX -->
-              <p class="animate__animated ">
+              <p data-aos="fade-down" data-aos-duration="1500">
                 Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
               </p>
               <!-- animate__fadeInDown -->
-              <a href="#" class="btn btn-success btn-style animate__animated ">
+              <a
+                href="#"
+                class="btn btn-success btn-style"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="800"
+              >
                 Learn More
               </a>
               <!-- animate__fadeInUp -->
@@ -168,7 +200,8 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-    <script src="/js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script src="/js/main.js"></script> -->
     <script>
       $(document).ready(function () {
         setTimeout(function () {
@@ -189,6 +222,10 @@
         }, 2000);
       });
     </script>
-    <script>animateToggle()</script>
+
+    <script>
+      AOS.init();
+    </script>
+    <!-- <script>animateToggle()</script> -->
   </body>
 </html>
