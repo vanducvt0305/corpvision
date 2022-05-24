@@ -32,9 +32,10 @@
     <link rel="stylesheet" type="text/css" href="/css/slick/slick-theme.css" />
     <!-- Light Box -->
     <link rel="stylesheet" href="css/dist/css/lightbox.css" />
+    <!-- MAGNIFIC POPUP -->
+    <link rel="stylesheet" href="css/magnific-popup.css" />
     <!-- Other CSS -->
     <link rel="stylesheet" href="/css/flaticon/flaticon.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Style CSS -->
     <link rel="stylesheet" href="/css/stylek.css" />
   </head>
@@ -131,27 +132,14 @@
         <div class="slider-background bg-1 d-flex align-items-center" id="bg-1">
           <div class="container">
             <div class="slider-item item-1">
-              <h1
-                data-aos="flip-down"
-                data-aos-duration="1000"
-                data-aos-delay="800"
-              >
-                We will solve your issues our vision to your future
-              </h1>
+              <h1>We will solve your issues our vision to your future</h1>
               <!-- animate__flipInX -->
-              <p data-aos="fade-down" data-aos-duration="1500">
+              <p>
                 Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
               </p>
               <!-- animate__fadeInDown -->
-              <a
-                href="#"
-                class="btn btn-success btn-style"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="800"
-                >Learn More</a
-              >
+              <a href="#" class="btn btn-success btn-style">Learn More</a>
               <!-- animate__fadeInUp -->
             </div>
           </div>
@@ -160,27 +148,14 @@
         <div class="slider-background bg-2 d-flex align-items-center" id="bg-2">
           <div class="container">
             <div class="slider-item item-2">
-              <h1
-                data-aos="fade-down"
-                data-aos-duration="1000"
-                data-aos-delay="800"
-              >
-                Embracing success do our best, need best advice
-              </h1>
+              <h1>Embracing success do our best, need best advice</h1>
               <!-- animate__fadeInDown -->
-              <p data-aos="fade-down" data-aos-duration="1500">
+              <p>
                 Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
               </p>
               <!-- animate__fadeInDown -->
-              <a
-                href="#"
-                class="btn btn-success btn-style"
-                data-aos="fade-down"
-                data-aos-duration="1000"
-                data-aos-delay="800"
-                >Learn More</a
-              >
+              <a href="#" class="btn btn-success btn-style">Learn More</a>
               <!-- animate__fadeInDown -->
             </div>
           </div>
@@ -189,28 +164,14 @@
         <div class="slider-background bg-3 d-flex align-items-center" id="bg-3">
           <div class="container">
             <div class="slider-item item-3">
-              <h1
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="800"
-              >
-                Digital transformation driven by technology
-              </h1>
+              <h1>Digital transformation driven by technology</h1>
               <!-- animate__fadeInUp -->
-              <p data-aos="fade-up" data-aos-duration="1500">
+              <p>
                 Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
               </p>
               <!-- animate__fadeInUp -->
-              <a
-                href="#"
-                class="btn btn-success btn-style"
-                data-aos="fade-down"
-                data-aos-duration="1000"
-                data-aos-delay="800"
-              >
-                Learn More
-              </a>
+              <a href="#" class="btn btn-success btn-style"> Learn More </a>
               <!-- animate__fadeInDown -->
             </div>
           </div>
@@ -219,28 +180,14 @@
         <div class="slider-background bg-4 d-flex align-items-center" id="bg-4">
           <div class="container">
             <div class="slider-item item-4">
-              <h1
-                data-aos="flip-down"
-                data-aos-duration="1000"
-                data-aos-delay="800"
-              >
-                For those who believe in leaving a mark
-              </h1>
+              <h1>For those who believe in leaving a mark</h1>
               <!-- animate__flipInX -->
-              <p data-aos="fade-down" data-aos-duration="1500">
+              <p>
                 Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
               </p>
               <!-- animate__fadeInDown -->
-              <a
-                href="#"
-                class="btn btn-success btn-style"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="800"
-              >
-                Learn More
-              </a>
+              <a href="#" class="btn btn-success btn-style"> Learn More </a>
               <!-- animate__fadeInUp -->
             </div>
           </div>
@@ -305,7 +252,10 @@
                 <a href="#" class="btn btn-success btn-style mt-4 me-3"
                   >Read More</a
                 >
-                <a href="#" class="d-block play-button mt-4 ms-3">
+                <a
+                  href="https://www.youtube.com/watch?v=2N247cY2bEw"
+                  class="d-block play-button mt-4 ms-3 popup-with-zoom-anim"
+                >
                   <i class="fa-regular fa-circle-play text-success"></i>
                 </a>
               </div>
@@ -941,7 +891,7 @@
             anim id est nulla.
           </p>
           <div class="play-button">
-            <a href="#">
+            <a href="https://www.youtube.com/watch?v=2N247cY2bEw" class="popup-with-zoom-anim">
               <i class="fa-regular fa-circle-play"></i>
             </a>
           </div>
@@ -1324,11 +1274,7 @@
             <a href="#" class="text-success text-decoration-none">W3Layouts.</a>
           </p>
         </div>
-        <button
-          onclick="topFunction()"
-          id="movetop"
-          title="Go to Top"
-        >
+        <button onclick="topFunction()" id="movetop" title="Go to Top">
           <span class="fa fa-angle-up"></span>
         </button>
       </div>
@@ -1361,6 +1307,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="/js/jquery.magnific-popup.min.js"></script>
     <script src="/js/dist/js/lightbox.min.js"></script>
     <script type="text/javascript">
       window.addEventListener("scroll", function () {
@@ -1452,7 +1399,40 @@
       }
     </script>
     <script>
-      AOS.init();
+      $(document).ready(function () {
+        $(".popup-with-zoom-anim").magnificPopup({
+          type: "iframe",
+          iframe: {
+            markup:
+              '<div class="mfp-iframe-scaler">' +
+              '<div class="mfp-close"></div>' +
+              '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+              "</div>",
+
+            patterns: {
+              youtube: {
+                index: "youtube.com/",
+
+                src: "https://www.youtube.com/embed/%id%?autoplay=1",
+              },
+            },
+
+            srcAction: "iframe_src",
+          },
+
+          fixedContentPos: false,
+          fixedBgPos: true,
+
+          overflowY: "auto",
+
+          closeBtnInside: true,
+          preloader: false,
+
+          midClick: true,
+          removalDelay: 300,
+          mainClass: "my-mfp-zoom-in",
+        });
+      });
     </script>
   </body>
 </html>
