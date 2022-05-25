@@ -428,11 +428,11 @@
 }
 
 
-/* .challenge-right{
+#challenge-right{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
-} */
+}
 .grid-template{
     padding: 40px 30px;
     text-align: center;
