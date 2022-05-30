@@ -94,6 +94,7 @@ a {
 }
 .header .dropdown-item:focus,
 .dropdown-item:hover {
+  color: #3f3a64;
   background-color: transparent;
   opacity: 1;
 }
